@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ package }}</title>
+</head>
+<body>
+{% for file in files %}
+  <a href="{{ repo_addr }}{{ package }}/{{ file }}">{{ file }}</a>
+{% endfor %}
+</body>
+</html>
